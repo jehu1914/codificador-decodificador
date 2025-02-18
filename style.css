@@ -57,3 +57,15 @@ button:active {
 #copy {
     margin: 0 auto; /* Centrar el botón */
 }
+
+/* Estilo para el contenedor del logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo-container svg {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: 150px;
+}
