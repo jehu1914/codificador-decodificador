@@ -1,42 +1,59 @@
+/* Estilo general */
 body {
-  background-color: #000000;
-  color: #00FF00;
-  font-family: "Courier New", monospace;
-  font-size: 14px;
+    background-color: black;
+    color: #39ff14; /* Verde fosforescente */
+    font-family: 'Courier New', monospace;
+    margin: 20px;
+    text-align: center;
 }
 
 h1 {
-  text-align: center;
-  font-size: 24px;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-p {
-  margin-bottom: 10px;
-}
-
-#input, #output {
-  width: 300px;
-  height: 100px;
-  background-color: #000000;
-  color: #00FF00;
-  border: 1px solid #00FF00;
-  font-family: "Courier New", monospace;
-  font-size: 14px;
-  display: block;
+textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: black;
+    color: #39ff14;
+    border: 2px solid #39ff14;
+    border-radius: 5px;
+    resize: none;
 }
 
 button {
-  margin: 10px;
-  background-color: #000000;
-  color: #00FF00;
-  border: 1px solid #00FF00;
-  font-family: "Courier New", monospace;
-  font-size: 14px;
-  padding: 5px 10px;
-  cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    border: 2px solid #39ff14;
+    border-radius: 5px;
+    background-color: black;
+    color: #39ff14;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 button:hover {
-  background-color: #00FF00;
-  color: #000000;
-  }
+    background-color: #39ff14;
+    color: black;
+}
+
+button:active {
+    background-color: #00ff00; /* Verde brillante al hacer clic */
+    border-color: #00ff00;
+    transform: scale(0.95); /* Efecto de contracción al hacer clic */
+}
+
+/* Contenedor para el botón "Copiar" */
+.copy-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#copy {
+    margin: 0 auto; /* Centrar el botón */
+}
